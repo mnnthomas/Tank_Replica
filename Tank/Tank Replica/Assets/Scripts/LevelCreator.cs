@@ -25,8 +25,10 @@ public class LevelCreator : MonoBehaviour
 
     void Awake()
     {
-        if(pInstance == null)
+        if (pInstance == null)
             pInstance = this;
+        else
+            Destroy(gameObject);
     }
 
     private void Start()
@@ -58,7 +60,7 @@ public class LevelCreator : MonoBehaviour
                     mTiles[i, j].gameObject.name = mCurTile.name;
                     mTiles[i, j].transform.SetParent(_GridParent.transform);
                     mTiles[i, j].transform.position = new Vector3(j * _TileSize + j * _TileOffset, 0f, i * _TileSize + i * _TileOffset);
-                    mTiles[i, j].transform.position -= new Vector3(_GridSize / 2, 0, _GridSize / 2);
+                    mTiles[i, j].transform.position -= new Vector3(_GridSize/2, -mCurTile.transform.localScale.y/2, _GridSize/2); //Offset
                 }
             }
         }

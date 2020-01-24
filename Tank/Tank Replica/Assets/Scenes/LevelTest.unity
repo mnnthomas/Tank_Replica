@@ -428,6 +428,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1216898271722573575, guid: fd501135e3a38794a84c66ebfb0e3994,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216898271781473576, guid: fd501135e3a38794a84c66ebfb0e3994,
+        type: 3}
+      propertyPath: _LevelTextures.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216898271781473576, guid: fd501135e3a38794a84c66ebfb0e3994,
+        type: 3}
+      propertyPath: _LevelTextures.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 75b9034361c9e454ea01b7973070cbf0, type: 3}
     - target: {fileID: 1216898271781473577, guid: fd501135e3a38794a84c66ebfb0e3994,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -487,16 +502,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelCreator
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216898272164735973, guid: fd501135e3a38794a84c66ebfb0e3994,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216898272164735973, guid: fd501135e3a38794a84c66ebfb0e3994,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd501135e3a38794a84c66ebfb0e3994, type: 3}
